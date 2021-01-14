@@ -1,5 +1,7 @@
 const db = require('./models');
 
+
+// Create Comment
 db.comment.create({
   name: 'Paul Allen',
   content: 'This is really neat! Thanks for posting.',
@@ -9,3 +11,5 @@ db.comment.create({
   console.log(comment.get())
 })
 .catch(error => console.log(`❌ Error: `, error))
+
+// Test for comment
