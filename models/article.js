@@ -11,4 +11,4 @@ module.exports = (sequelize, DataTypes) => {
     models.article.hasMany(models.comment)
   }
   return article
-}
+} 

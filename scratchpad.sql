@@ -3,7 +3,7 @@ sequelize model:create --name comment --attributes commentator_name:string,comme
 
 
 
-  sequelize model:create --name comment --attributes commentator_name:string,comment_payload:string,article:string
+sequelize model:create --name comment --attributes commentator_name:string,comment_payload:string,article:string
 
 
 
