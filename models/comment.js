@@ -4,20 +4,15 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class comment extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
     static associate(models) {
       // define association here
-      models.comment.belongsTo(models.article)
+      models.comment.belongsTo(models.article);
     }
   };
   comment.init({
     commentator_name: DataTypes.STRING,
     comment_payload: DataTypes.TEXT,
-    article: DataTypes.STRING
+    articleId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'comment',
