@@ -14,8 +14,8 @@ module.exports = {
       comment_payload: {
         type: Sequelize.TEXT
       },
-      article: {
-        type: Sequelize.STRING
+      articleId: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
