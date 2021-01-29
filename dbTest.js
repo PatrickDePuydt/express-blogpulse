@@ -1,7 +1,7 @@
 const db = require('./models');
 
 // db.comment.create({
-//   name: 'Paul Allen',
+//   name: 'Melissa DePuydt',
 //   content: 'This is really neat! Thanks for posting.',
 //   articleId: 1
 // })
