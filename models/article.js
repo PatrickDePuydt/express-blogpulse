@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {})
   article.associate = function(models) {
     models.article.belongsTo(models.author);
-    models.article.belongsTo(models.comment);
+    models.article.hasMany(models.comment);
   }
   return article
 }
