@@ -1,1 +1,1 @@
-sequelize 
+sequelize model:create --name comment --attributes name:string,content:text,articleId:integer
